@@ -40,11 +40,18 @@ typedef enum{
     soma,
     dividir,
     multiplicar,
-    subtrair
+    subtrair,
+    porcento
     
     
 }operacao;
 @property int op;
+
+@property (weak, nonatomic) IBOutlet UIView *barra;
+
+
+
+
 @end
 
 @implementation FacilitiesViewController
@@ -66,9 +73,11 @@ typedef enum{
         btn.layer.borderWidth = 5.0;
         [btn addTarget:self action:@selector(cliqueBotao:) forControlEvents:UIControlEventTouchUpInside];
     }
+    _barra.layer.borderColor = [[UIColor whiteColor] CGColor];
+    _barra.layer.borderWidth = 3.0;
+    _visorLabel.layer.cornerRadius = 30.0;
 }
-//-(void)transformers: (float ) x {
-  //  self.visorLabel.text = float stringWithFormat:@"%f",x
+
 
 
 -(void)cliqueBotao: (UIButton * )sender{
@@ -81,14 +90,65 @@ typedef enum{
         
         return;
         
+    }
+    if (sender == self.bottomMenos) {
+        _op = subtrair;
+        _j =[[[self visorLabel] text] floatValue];
+        self.visorLabel.text = @"";
+        
+        return;
         
     }
+    if (sender == self.bottomMais) {
+        _op = soma;
+        _j =[[[self visorLabel] text] floatValue];
+        self.visorLabel.text = @"";
+        
+        return;
+        
+    }
+    if (sender == self.bottomPorcento) {
+        _op = porcento;
+        _j =[[[self visorLabel] text] floatValue];
+        self.visorLabel.text = @"";
+        
+        return;
+        
+    }
+    if (sender == self.bottomVezes) {
+        _op = multiplicar;
+        _j =[[[self visorLabel] text] floatValue];
+        self.visorLabel.text = @"";
+        
+        return;
+        
+    }
+
+
     if (sender == self.botttomIgual) {
       _k = [[[self visorLabel] text] floatValue];
         if (_op == dividir) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.3f",_j/_k];
+            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/_k];
             return;
         }
+        if (_op == subtrair) {
+            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j-_k];
+            return;
+        }
+        if (_op == soma) {
+            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j+_k];
+            return;
+        }
+        if (_op == multiplicar) {
+            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j*_k];
+            return;
+        }
+        if (_op == subtrair) {
+            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/100];
+            return;
+        }
+
+
     }
 
     if (sender == self.bottomCE) {
