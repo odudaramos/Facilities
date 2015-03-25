@@ -10,6 +10,7 @@
 
 @interface FacilitiesViewController ()
 @property (nonatomic)IBOutlet UILabel *visorLabel;
+@property (weak, nonatomic) IBOutlet UIButton *botton7;
 
 @end
 
@@ -17,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.botton7.layer.cornerRadius = 7.0;
+    self.botton7.layer.borderWidth = 10.0;
+    self.botton7.layer.borderColor = [[UIColor whiteColor] CGColor];
 }
 
 - (void)didReceiveMemoryWarning {
