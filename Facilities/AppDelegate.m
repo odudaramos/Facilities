@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "FacilitiesView.m"
 @interface AppDelegate ()
 
 @end
@@ -31,8 +31,9 @@
     [self.window addSubview:scrollView ];
     
     FacilitiesViewController *medidor = [[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil];
+   
     [scrollView addSubview:medidor.view];
-    
+     //self.window.rootViewController = medidor;
     MedidorViewController * conver = [[MedidorViewController alloc ] initWithNibName:@"MedidorViewController"  bundle:nil];
     
     screenRect.origin.x += screenRect.size.width;

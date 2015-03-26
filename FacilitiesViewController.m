@@ -48,6 +48,7 @@ typedef enum{
 @property int op;
 
 @property (weak, nonatomic) IBOutlet UIView *barra;
+@property (weak, nonatomic) IBOutlet UISwitch *precisao;
 
 
 
@@ -75,19 +76,20 @@ typedef enum{
     }
     _barra.layer.borderColor = [[UIColor whiteColor] CGColor];
     _barra.layer.borderWidth = 3.0;
-    _visorLabel.layer.cornerRadius = 30;
+   // _visorLabel.layer.cornerRadius = 30;
+    
 }
 
 
 
--(void)cliqueBotao: (UIButton * )sender{
+-(IBAction)cliqueBotao: (UIButton * )sender{
    // NSLog(@"%@",sender.titleLabel.text);
     
     if (sender == self.bottomDividir) {
         _op = dividir;
         _j =[[[self visorLabel] text] floatValue];
          self.visorLabel.text = @"";
-        
+       // NSLog(@"%@",_precisao);
         return;
         
     }
@@ -128,7 +130,11 @@ typedef enum{
     if (sender == self.botttomIgual) {
       _k = [[[self visorLabel] text] floatValue];
         if (_op == dividir) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/_k];
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/_k];
+            } else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j/_k];
+                
             return;
         }
         if (_op == subtrair) {
