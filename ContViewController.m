@@ -31,7 +31,7 @@
     [self.view addGestureRecognizer:swipe];
     
     UISwipeGestureRecognizer *swipe2 = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
-    
+    ////////asdasdasdasdasd
     [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe2];
     
