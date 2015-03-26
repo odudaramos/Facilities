@@ -24,9 +24,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
+    
+    [swipe setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.view addGestureRecognizer:swipe];
 }
+-(void)mudarTela2 {
 
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
