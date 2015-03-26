@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContViewController">
             <connections>
                 <outlet property="alerta" destination="2bE-Qn-KoG" id="rky-BX-V3j"/>
+                <outlet property="break2" destination="nPa-4f-qx2" id="aYr-Kp-D8O"/>
                 <outlet property="cont1" destination="jI1-eL-WKO" id="mi5-kF-nvq"/>
                 <outlet property="cont2" destination="u0V-wX-wzE" id="UmW-a8-QTc"/>
                 <outlet property="ganhador" destination="MbJ-6D-8a7" id="O0o-B6-gEj"/>
@@ -113,7 +114,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-Qn-KoG">
-                    <rect key="frame" x="48" y="224" width="289" height="163"/>
+                    <rect key="frame" x="48" y="212" width="289" height="145"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jogador" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-hT-ztV">
                             <rect key="frame" x="17" y="60" width="73" height="39.5"/>
@@ -131,6 +132,18 @@
                             <rect key="frame" x="206" y="71" width="75" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPa-4f-qx2">
+                    <rect key="frame" x="120" y="358" width="145" height="82"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BREAK POINT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-uM-JN6">
+                            <rect key="frame" x="16" y="26" width="121" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>

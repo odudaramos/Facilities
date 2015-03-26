@@ -30,6 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIView *alerta;
 @property (weak, nonatomic) IBOutlet UILabel *ganhador;
 
+@property (weak, nonatomic) IBOutlet UIView *break2;
 
 
 @end
@@ -74,6 +75,10 @@
     self.alerta.layer.borderWidth =8.0;
     self.alerta.layer.borderColor = [[UIColor whiteColor]CGColor];
     self.alerta.layer.cornerRadius = 10.0;
+    self.break2.hidden = true;
+    self.break2.layer.borderWidth =8.0;
+    self.break2.layer.borderColor = [[UIColor whiteColor]CGColor];
+    self.break2.layer.cornerRadius = 10.0;
     
 }
 -(IBAction)cliqueBotao:(id)sender{
@@ -102,7 +107,7 @@
         self.menos.hidden = true;
         self.mais2.hidden = true;
         self.menos2.hidden = true;
-        
+        self.break2.hidden = true;
     }
     if (_x2 ==12) {
         self.alerta.hidden = false;
@@ -111,7 +116,11 @@
         self.menos.hidden = true;
         self.mais2.hidden = true;
         self.menos2.hidden = true;
+        self.break2.hidden = true;
         
+    }
+    if (_x ==11 && _x2==11) {
+        self.break2.hidden = false;
     }
 
     
@@ -128,6 +137,7 @@
     self.menos.hidden = NO;
     self.mais2.hidden = false;
     self.menos2.hidden = false;
+    self.break2.hidden = true;
 
 }
 
