@@ -14,16 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *cont2;
 
-
-@property (weak, nonatomic) IBOutlet UIButton *menos;
-
-
-@property (weak, nonatomic) IBOutlet UIButton *mais;
-
-@property (weak, nonatomic) IBOutlet UIButton *menos2;
-
-@property (weak, nonatomic) IBOutlet UIButton *mais2;
-@property int x;
 @end
 
 @implementation ContViewController
@@ -33,7 +23,7 @@
     // Do any additional setup after loading the view from its nib.
     
 
-    _x=0;
+    
     UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela)];
     
     [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
@@ -44,10 +34,6 @@
     
     [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe2];
-    
-}
--(void)cliqueBotao{
-    
     
 }
 -(void)mudarTela2 {
