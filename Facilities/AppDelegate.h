@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FacilitiesViewController.h"
+#import "MedidorViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

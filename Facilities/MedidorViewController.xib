@@ -32,7 +32,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSC-sY-044">
-                    <rect key="frame" x="215" y="27" width="119" height="162"/>
+                    <rect key="frame" x="215" y="27" width="78" height="162"/>
                 </pickerView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
