@@ -88,9 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				9859303E1AC3177C007FA8D3 /* AppDelegate.h */,
+				9859303F1AC3177C007FA8D3 /* AppDelegate.m */,
 				9859305D1AC317E3007FA8D3 /* FacilitiesView.h */,
 				9859305E1AC317E3007FA8D3 /* FacilitiesView.m */,
-				9859303F1AC3177C007FA8D3 /* AppDelegate.m */,
 				985930411AC3177C007FA8D3 /* Images.xcassets */,
 				985930431AC3177C007FA8D3 /* LaunchScreen.xib */,
 				9859303A1AC3177C007FA8D3 /* Supporting Files */,
@@ -410,6 +410,7 @@
 				985930561AC3177C007FA8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		985930571AC3177C007FA8D3 /* Build configuration list for PBXNativeTarget "FacilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +419,7 @@
 				985930591AC3177C007FA8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
