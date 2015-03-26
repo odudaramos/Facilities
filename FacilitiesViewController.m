@@ -36,6 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *bottomPoint;
 @property float k,j;
 @property BOOL flag;
+
 typedef enum{
     soma,
     dividir,
@@ -45,6 +46,7 @@ typedef enum{
     
     
 }operacao;
+
 @property int op;
 
 @property (weak, nonatomic) IBOutlet UIView *barra;
@@ -201,7 +203,7 @@ typedef enum{
 
 -(void)mudarTela {
     
-    ContViewController * nova = [[ContViewController alloc] initWithNibName:@"ContViewController" bundle:nil] ;
+    BhaskaraViewController * nova = [[BhaskaraViewController alloc] initWithNibName:@"BhaskaraViewController" bundle:nil] ;
     
     [self presentViewController:nova animated:YES completion:nil];
     

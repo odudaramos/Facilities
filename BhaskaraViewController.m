@@ -24,11 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
     
     [swipe setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe];
+
 }
 -(void)mudarTela2 {
 
@@ -49,5 +49,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)cliqueBotao:(UIButton *)sender{
+    
+    
+    
+}
 
 @end
