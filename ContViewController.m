@@ -13,6 +13,24 @@
 @property (weak, nonatomic) IBOutlet UILabel *cont1;
 
 @property (weak, nonatomic) IBOutlet UILabel *cont2;
+@property (weak, nonatomic) IBOutlet UIButton *menos;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *mais;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *menos2;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *mais2;
+
+@property int x,x2;
+
+@property (weak, nonatomic) IBOutlet UIButton *resetar;
+@property (weak, nonatomic) IBOutlet UIView *alerta;
+@property (weak, nonatomic) IBOutlet UILabel *ganhador;
+
+
 
 @end
 
@@ -22,7 +40,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-
     
     UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela)];
     
@@ -31,11 +48,89 @@
     [self.view addGestureRecognizer:swipe];
     
     UISwipeGestureRecognizer *swipe2 = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
-    ////////asdasdasdasdasd
     [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe2];
+    _x=0;
+    _x2=0;
+    self.mais.layer.cornerRadius = 15.0;
+    self.mais.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.mais.layer.borderWidth = 3.0;
+    
+    self.menos.layer.cornerRadius = 15.0;
+    self.menos.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.menos.layer.borderWidth = 3.0;
+    
+    self.mais2.layer.cornerRadius = 15.0;
+    self.mais2.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.mais2.layer.borderWidth = 3.0;
+    
+    self.menos2.layer.cornerRadius = 15.0;
+    self.menos2.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.menos2.layer.borderWidth = 3.0;
+    
+    self.resetar.layer.cornerRadius = 15.0;
+    self.resetar.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.resetar.layer.borderWidth = 3.0;
+    self.alerta.layer.borderWidth =8.0;
+    self.alerta.layer.borderColor = [[UIColor whiteColor]CGColor];
+    self.alerta.layer.cornerRadius = 10.0;
     
 }
+-(IBAction)cliqueBotao:(id)sender{
+    if(_mais.touchInside){
+        _x++;
+    }else if(_menos.touchInside)
+        _x--;
+    if (_mais2.touchInside) {
+        _x2++;
+    }else if (_menos2.touchInside)
+        _x2--;
+    if (_x <0 || _x >12)
+        _x=0;
+    
+    if (_x2 <0 || _x2 >12)
+        _x2=0;
+    
+
+    self.cont1.text = [NSString stringWithFormat:@"%d", _x];
+    self.cont2.text = [NSString stringWithFormat:@"%d", _x2];
+    
+    if (_x ==12) {
+        self.alerta.hidden = false;
+        self.ganhador.text =@"1";
+        self.mais.hidden = true;
+        self.menos.hidden = true;
+        self.mais2.hidden = true;
+        self.menos2.hidden = true;
+        
+    }
+    if (_x2 ==12) {
+        self.alerta.hidden = false;
+        self.ganhador.text =@"2";
+        self.mais.hidden = true;
+        self.menos.hidden = true;
+        self.mais2.hidden = true;
+        self.menos2.hidden = true;
+        
+    }
+
+    
+    
+    
+}
+-(IBAction)resetar:(id)sender{
+    self.x = 0;
+    self.x2 =0;
+    self.cont1.text = [NSString stringWithFormat:@"%d", _x];
+    self.cont2.text = [NSString stringWithFormat:@"%d", _x2];
+    self.alerta.hidden = YES;
+    self.mais.hidden = NO;
+    self.menos.hidden = NO;
+    self.mais2.hidden = false;
+    self.menos2.hidden = false;
+
+}
+
 -(void)mudarTela2 {
     
     [self dismissViewControllerAnimated:YES completion:nil];

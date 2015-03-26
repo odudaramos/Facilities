@@ -57,7 +57,12 @@ typedef enum{
 
 @implementation FacilitiesViewController
 
+
+
+
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela)];
@@ -84,6 +89,8 @@ typedef enum{
     _barra.layer.borderColor = [[UIColor whiteColor] CGColor];
     _barra.layer.borderWidth = 3.0;
     _visorLabel.layer.cornerRadius = 30.0;
+    [_precisao setOn:NO animated:NO];
+    
 }
 
 
