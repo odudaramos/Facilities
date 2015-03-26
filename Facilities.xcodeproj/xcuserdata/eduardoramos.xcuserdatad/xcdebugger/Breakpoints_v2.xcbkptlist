@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacilitiesViewController.m"
-            timestampString = "449020144.212193"
+            timestampString = "449012907.040799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "-cliqueBotao:"
             landmarkType = "5">
          </BreakpointContent>
