@@ -17,31 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    
+    [self.window setRootViewController:[[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-
-    CGRect screenRect = self.window.bounds;
-    
-    CGRect bigRect = screenRect;
-    bigRect.size.width *= 2.0;
-    
-    UIScrollView *scrollView =[[UIScrollView alloc]initWithFrame:screenRect];
-    scrollView.pagingEnabled =YES;
-    
-    [self.window addSubview:scrollView ];
-    
-    FacilitiesViewController *medidor = [[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil];
-    [scrollView addSubview:medidor.view];
-    
-    MedidorViewController * conver = [[MedidorViewController alloc ] initWithNibName:@"MedidorViewController"  bundle:nil];
-    
-    screenRect.origin.x += screenRect.size.width;
-    [conver.view setFrame:CGRectMake(screenRect.origin.x, 0, conver.view.frame.size.width, conver.view.frame.size.height)];
-    [scrollView addSubview:conver.view];
-    
-    scrollView.contentSize = bigRect.size;
-    
-   
     return YES;
 }
 
