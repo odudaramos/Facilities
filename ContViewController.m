@@ -10,10 +10,6 @@
 
 @interface ContViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *cont1;
-
-@property (weak, nonatomic) IBOutlet UILabel *cont2;
-
 @end
 
 @implementation ContViewController
