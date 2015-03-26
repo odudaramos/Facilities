@@ -50,6 +50,7 @@ typedef enum{
 @property (weak, nonatomic) IBOutlet UIView *barra;
 
 
+@property (weak, nonatomic) IBOutlet UISwitch *precisao;
 
 
 @end
@@ -135,26 +136,49 @@ typedef enum{
     if (sender == self.botttomIgual) {
       _k = [[[self visorLabel] text] floatValue];
         if (_op == dividir) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/_k];
+            if (_precisao.on) {
+                 self.visorLabel.text = [NSString stringWithFormat:@"%f",_j/_k];
+            }else
+            self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j/_k];
+            
             return;
         }
         if (_op == subtrair) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j-_k];
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%f",_j-_k];
+            }else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j-_k];
             return;
         }
         if (_op == soma) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j+_k];
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%f",_j+_k];
+            }else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j+_k];
             return;
         }
         if (_op == multiplicar) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j*_k];
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%f",_j*_k];
+            }else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j*_k];
             return;
         }
         if (_op == subtrair) {
-            self.visorLabel.text = [NSString stringWithFormat:@"%.2f",_j/100];
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%f",_j-_k];
+            }else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j-_k];
             return;
         }
 
+        if (_op == porcento) {
+            if (_precisao.on) {
+                self.visorLabel.text = [NSString stringWithFormat:@"%f",_j/100];
+            }else
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j/100];
+            return;
+        }
 
     }
 

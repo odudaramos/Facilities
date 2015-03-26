@@ -15,6 +15,8 @@
 		9859305F1AC317E3007FA8D3 /* FacilitiesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9859305E1AC317E3007FA8D3 /* FacilitiesView.m */; };
 		985930631AC31879007FA8D3 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 985930611AC31879007FA8D3 /* FacilitiesViewController.m */; };
 		985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985930621AC31879007FA8D3 /* FacilitiesViewController.xib */; };
+		B0F9B6731AC48A0C000CA29F /* ContViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B6711AC48A0C000CA29F /* ContViewController.m */; };
+		B0F9B6741AC48A0C000CA29F /* ContViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F9B6721AC48A0C000CA29F /* ContViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		985930601AC31879007FA8D3 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		985930611AC31879007FA8D3 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
 		985930621AC31879007FA8D3 /* FacilitiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacilitiesViewController.xib; sourceTree = "<group>"; };
+		B0F9B6701AC48A0C000CA29F /* ContViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContViewController.h; sourceTree = "<group>"; };
+		B0F9B6711AC48A0C000CA29F /* ContViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContViewController.m; sourceTree = "<group>"; };
+		B0F9B6721AC48A0C000CA29F /* ContViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,9 @@
 			children = (
 				985930601AC31879007FA8D3 /* FacilitiesViewController.h */,
 				985930611AC31879007FA8D3 /* FacilitiesViewController.m */,
+				B0F9B6701AC48A0C000CA29F /* ContViewController.h */,
+				B0F9B6711AC48A0C000CA29F /* ContViewController.m */,
+				B0F9B6721AC48A0C000CA29F /* ContViewController.xib */,
 				985930621AC31879007FA8D3 /* FacilitiesViewController.xib */,
 				985930391AC3177C007FA8D3 /* Facilities */,
 				9859304D1AC3177C007FA8D3 /* FacilitiesTests */,
@@ -206,6 +214,7 @@
 			files = (
 				985930451AC3177C007FA8D3 /* LaunchScreen.xib in Resources */,
 				985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */,
+				B0F9B6741AC48A0C000CA29F /* ContViewController.xib in Resources */,
 				985930421AC3177C007FA8D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F9B6731AC48A0C000CA29F /* ContViewController.m in Sources */,
 				985930401AC3177C007FA8D3 /* AppDelegate.m in Sources */,
 				985930631AC31879007FA8D3 /* FacilitiesViewController.m in Sources */,
 				9859303D1AC3177C007FA8D3 /* main.m in Sources */,
