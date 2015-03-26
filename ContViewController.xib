@@ -8,6 +8,10 @@
             <connections>
                 <outlet property="cont1" destination="jI1-eL-WKO" id="mi5-kF-nvq"/>
                 <outlet property="cont2" destination="u0V-wX-wzE" id="UmW-a8-QTc"/>
+                <outlet property="mais" destination="2aj-bh-bYw" id="nol-eM-APQ"/>
+                <outlet property="mais2" destination="zir-ax-cLS" id="MOa-NN-og5"/>
+                <outlet property="menos" destination="Iba-2x-B9X" id="Oyj-E2-wpb"/>
+                <outlet property="menos2" destination="x7Y-tV-bLd" id="hPh-xX-ZNJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
