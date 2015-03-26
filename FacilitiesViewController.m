@@ -147,8 +147,7 @@ typedef enum{
             if (_precisao.on) {
                 self.visorLabel.text = [NSString stringWithFormat:@"%f",_j-_k];
             }else
-                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j-_k];
-            return;
+                self.visorLabel.text = [NSString stringWithFormat:@"%.1f",_j-_k];            return;
         }
         if (_op == soma) {
             if (_precisao.on) {
@@ -202,7 +201,7 @@ typedef enum{
 
 -(void)mudarTela {
     
-    FacilitiesViewController * nova = [[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil] ;
+    ContViewController * nova = [[ContViewController alloc] initWithNibName:@"ContViewController" bundle:nil] ;
     
     [self presentViewController:nova animated:YES completion:nil];
     

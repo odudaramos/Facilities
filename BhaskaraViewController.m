@@ -1,22 +1,26 @@
 //
-//  ContViewController.m
+//  BhaskaraViewController.m
 //  Facilities
 //
 //  Created by André Rodrigues de Jesus on 3/26/15.
 //  Copyright (c) 2015 Eduardo Ramos. All rights reserved.
 //
 
-#import "ContViewController.h"
+#import "BhaskaraViewController.h"
 
-@interface ContViewController ()
+@interface BhaskaraViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *cont1;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldA;
 
-@property (weak, nonatomic) IBOutlet UILabel *cont2;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldB;
+
+@property (weak, nonatomic) IBOutlet UITextField *textFieldC;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonCalcular;
 
 @end
 
-@implementation ContViewController
+@implementation BhaskaraViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
