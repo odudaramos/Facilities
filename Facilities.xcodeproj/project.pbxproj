@@ -15,8 +15,6 @@
 		9859305F1AC317E3007FA8D3 /* FacilitiesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9859305E1AC317E3007FA8D3 /* FacilitiesView.m */; };
 		985930631AC31879007FA8D3 /* FacilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 985930611AC31879007FA8D3 /* FacilitiesViewController.m */; };
 		985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985930621AC31879007FA8D3 /* FacilitiesViewController.xib */; };
-		985930681AC36C4B007FA8D3 /* MedidorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 985930661AC36C4B007FA8D3 /* MedidorViewController.m */; };
-		985930691AC36C4B007FA8D3 /* MedidorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985930671AC36C4B007FA8D3 /* MedidorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +43,6 @@
 		985930601AC31879007FA8D3 /* FacilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacilitiesViewController.h; sourceTree = "<group>"; };
 		985930611AC31879007FA8D3 /* FacilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacilitiesViewController.m; sourceTree = "<group>"; };
 		985930621AC31879007FA8D3 /* FacilitiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FacilitiesViewController.xib; sourceTree = "<group>"; };
-		985930651AC36C4B007FA8D3 /* MedidorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedidorViewController.h; sourceTree = "<group>"; };
-		985930661AC36C4B007FA8D3 /* MedidorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedidorViewController.m; sourceTree = "<group>"; };
-		985930671AC36C4B007FA8D3 /* MedidorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MedidorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +91,6 @@
 				9859305D1AC317E3007FA8D3 /* FacilitiesView.h */,
 				9859305E1AC317E3007FA8D3 /* FacilitiesView.m */,
 				9859303F1AC3177C007FA8D3 /* AppDelegate.m */,
-				985930651AC36C4B007FA8D3 /* MedidorViewController.h */,
-				985930661AC36C4B007FA8D3 /* MedidorViewController.m */,
-				985930671AC36C4B007FA8D3 /* MedidorViewController.xib */,
 				985930411AC3177C007FA8D3 /* Images.xcassets */,
 				985930431AC3177C007FA8D3 /* LaunchScreen.xib */,
 				9859303A1AC3177C007FA8D3 /* Supporting Files */,
@@ -213,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				985930451AC3177C007FA8D3 /* LaunchScreen.xib in Resources */,
-				985930691AC36C4B007FA8D3 /* MedidorViewController.xib in Resources */,
 				985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */,
 				985930421AC3177C007FA8D3 /* Images.xcassets in Resources */,
 			);
@@ -235,7 +226,6 @@
 			files = (
 				985930401AC3177C007FA8D3 /* AppDelegate.m in Sources */,
 				985930631AC31879007FA8D3 /* FacilitiesViewController.m in Sources */,
-				985930681AC36C4B007FA8D3 /* MedidorViewController.m in Sources */,
 				9859303D1AC3177C007FA8D3 /* main.m in Sources */,
 				9859305F1AC317E3007FA8D3 /* FacilitiesView.m in Sources */,
 			);
@@ -420,7 +410,6 @@
 				985930561AC3177C007FA8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		985930571AC3177C007FA8D3 /* Build configuration list for PBXNativeTarget "FacilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -429,7 +418,6 @@
 				985930591AC3177C007FA8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

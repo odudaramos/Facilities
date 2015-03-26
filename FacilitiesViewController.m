@@ -75,7 +75,7 @@ typedef enum{
     }
     _barra.layer.borderColor = [[UIColor whiteColor] CGColor];
     _barra.layer.borderWidth = 3.0;
-    _visorLabel.layer.cornerRadius = 30;
+    _visorLabel.layer.cornerRadius = 30.0;
 }
 
 
