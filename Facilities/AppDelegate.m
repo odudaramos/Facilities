@@ -18,9 +18,34 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+<<<<<<< HEAD
     
     [self.window setRootViewController:[[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil]];
     
+=======
+    
+    [self.window setRootViewController:[[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil]];
+    
+    //Create CGRect for frames
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 3.0;
+    
+    //Create a screen-sized scroll view and add it to window
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:screenRect];
+    [self.window addSubview:scrollView];
+    
+    //Create a test
+    
+   // FacilitiesViewController *otherView = [[FacilitiesViewController alloc]initWithNibName:@"FacilitiesViewController" bundle:nil];
+//[scrollView addSubview: otherView];
+    screenRect.origin.x += screenRect.size.width;
+    
+    
+    // Tell the scroll view how big its content area is
+    scrollView.contentSize = bigRect.size;
+    
+>>>>>>> master
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

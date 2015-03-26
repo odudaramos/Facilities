@@ -59,6 +59,13 @@ typedef enum{
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela)];
+    
+    [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
+    
+    [self.view addGestureRecognizer:swipe];
+    
     NSMutableArray *array = [NSMutableArray arrayWithObjects:self.bottom1,self.bottom2,self.bottom3,self.bottom4,self.bottom5,self.bottom6,self.bottom7,self.bottom8,self.bottom9,self.bottom0,self.bottomPoint, nil];
     for (int x =0; x<array.count; x++) {
         UIButton * btn = [array objectAtIndex:x];
@@ -182,11 +189,25 @@ typedef enum{
     self.visorLabel.text = [NSString stringWithFormat:@"%@%@",self.visorLabel.text,sender.titleLabel.text];//sender.titleLabel.text;
     
   
+    UIView *ex;
+    
+    [ex addSubview:[self bottom0]];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)mudarTela {
+    
+    FacilitiesViewController * nova = [[FacilitiesViewController alloc] initWithNibName:@"FacilitiesViewController" bundle:nil] ;
+    
+    [self presentViewController:nova animated:YES completion:nil];
+    
+    //[self.navigationController pushViewController:nova animated:YES];
+    
 }
 
 /*
