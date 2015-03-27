@@ -7,6 +7,7 @@
 //
 
 #import "BhaskaraViewController.h"
+#import "FlashLightViewController.h"
 
 @interface BhaskaraViewController ()
 
@@ -33,10 +34,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
+    UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela)];
     
-    [swipe setDirection:UISwipeGestureRecognizerDirectionDown];
+    [swipe setDirection:UISwipeGestureRecognizerDirectionUp];
+    
     [self.view addGestureRecognizer:swipe];
+    
+    UISwipeGestureRecognizer *swipe2 = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
+    [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.view addGestureRecognizer:swipe2];
     
     textFieldA.delegate = self;
     
@@ -59,8 +65,14 @@
     [textFieldC resignFirstResponder];
 }
 -(void)mudarTela2 {
-
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)mudarTela {
+    
+    FlashLightViewController * nova = [[FlashLightViewController alloc] initWithNibName:@"FlashLightViewController" bundle:nil] ;
+    
+    [self presentViewController:nova animated:YES completion:nil];
     
 }
 - (void)didReceiveMemoryWarning {

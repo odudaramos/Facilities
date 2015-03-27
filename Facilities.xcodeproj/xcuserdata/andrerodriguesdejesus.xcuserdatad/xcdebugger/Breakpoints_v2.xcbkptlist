@@ -17,6 +17,36 @@
             endingLineNumber = "44"
             landmarkName = "@interface FacilitiesViewController()"
             landmarkType = "2">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FacilitiesViewController op]"
+                  moduleName = "Facilities"
+                  urlString = "file:///Users/andrerodriguesdejesus/Desktop/gitHub/Facilities/FacilitiesViewController.m"
+                  timestampString = "449127981.327528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[FacilitiesViewController setOp:]"
+                  moduleName = "Facilities"
+                  urlString = "file:///Users/andrerodriguesdejesus/Desktop/gitHub/Facilities/FacilitiesViewController.m"
+                  timestampString = "449127981.327726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
