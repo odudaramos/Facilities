@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BhaskaraViewController : UIViewController
+@interface BhaskaraViewController : UIViewController <UITextFieldDelegate>
 
 @end
