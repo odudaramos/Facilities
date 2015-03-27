@@ -123,7 +123,7 @@
             [alert show];
         }
         else{
-            double delta = pow(b, b) -4*a*c;
+            double delta = pow(b, 2)-4* (a*c);
             double raizDelta = sqrt(delta);
             
             if(delta < 0){
@@ -135,8 +135,8 @@
                 
             }
             else{
-                double x1 = (-b+raizDelta)/2*a;
-                double x2 = (+b+raizDelta)/2*a;
+                double x1 = (-b+raizDelta)/(2*a);
+                double x2 = (+b+raizDelta)/(2*a);
                 
                 UIAlertView *alert = [[UIAlertView alloc]
                                       initWithTitle:@"Resultado" message:[NSString stringWithFormat:@"\nO valor de delta é %.2lf\n\n x1 = %.2lf\n\n x2 = %.2lf", delta,x1,x2]

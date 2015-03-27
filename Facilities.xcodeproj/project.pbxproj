@@ -17,6 +17,9 @@
 		985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 985930621AC31879007FA8D3 /* FacilitiesViewController.xib */; };
 		B0F61C3F1AC5178C0065A5BB /* FlashLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F61C3D1AC5178C0065A5BB /* FlashLightViewController.m */; };
 		B0F61C401AC5178C0065A5BB /* FlashLightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F61C3E1AC5178C0065A5BB /* FlashLightViewController.xib */; };
+		B0F61C4F1AC5BB040065A5BB /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F61C4E1AC5BB040065A5BB /* Icon-60.png */; };
+		B0F61C511AC5BB210065A5BB /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F61C501AC5BB210065A5BB /* Icon-76@2x.png */; };
+		B0F61C531AC5C1B30065A5BB /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F61C521AC5C1B30065A5BB /* Icon-Small-40@2x.png */; };
 		B0F9B6731AC48A0C000CA29F /* ContViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B6711AC48A0C000CA29F /* ContViewController.m */; };
 		B0F9B6741AC48A0C000CA29F /* ContViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F9B6721AC48A0C000CA29F /* ContViewController.xib */; };
 		B0F9B67B1AC4901A000CA29F /* BhaskaraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B6791AC4901A000CA29F /* BhaskaraViewController.m */; };
@@ -52,6 +55,9 @@
 		B0F61C3C1AC5178C0065A5BB /* FlashLightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashLightViewController.h; sourceTree = "<group>"; };
 		B0F61C3D1AC5178C0065A5BB /* FlashLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashLightViewController.m; sourceTree = "<group>"; };
 		B0F61C3E1AC5178C0065A5BB /* FlashLightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlashLightViewController.xib; sourceTree = "<group>"; };
+		B0F61C4E1AC5BB040065A5BB /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "../../../Downloads/F/f-branco/Icon-60.png"; sourceTree = "<group>"; };
+		B0F61C501AC5BB210065A5BB /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "../../../Downloads/F/f-branco/Icon-76@2x.png"; sourceTree = "<group>"; };
+		B0F61C521AC5C1B30065A5BB /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-40@2x.png"; path = "../../../Downloads/F/f-branco/Icon-Small-40@2x.png"; sourceTree = "<group>"; };
 		B0F9B6701AC48A0C000CA29F /* ContViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContViewController.h; sourceTree = "<group>"; };
 		B0F9B6711AC48A0C000CA29F /* ContViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContViewController.m; sourceTree = "<group>"; };
 		B0F9B6721AC48A0C000CA29F /* ContViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContViewController.xib; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				B0F9B6781AC4901A000CA29F /* BhaskaraViewController.h */,
 				B0F9B6791AC4901A000CA29F /* BhaskaraViewController.m */,
 				B0F9B67A1AC4901A000CA29F /* BhaskaraViewController.xib */,
+				B0F61C501AC5BB210065A5BB /* Icon-76@2x.png */,
+				B0F61C521AC5C1B30065A5BB /* Icon-Small-40@2x.png */,
+				B0F61C4E1AC5BB040065A5BB /* Icon-60.png */,
 				B0F61C3C1AC5178C0065A5BB /* FlashLightViewController.h */,
 				B0F61C3D1AC5178C0065A5BB /* FlashLightViewController.m */,
 				B0F61C3E1AC5178C0065A5BB /* FlashLightViewController.xib */,
@@ -232,7 +241,10 @@
 				985930641AC31879007FA8D3 /* FacilitiesViewController.xib in Resources */,
 				B0F61C401AC5178C0065A5BB /* FlashLightViewController.xib in Resources */,
 				B0F9B6741AC48A0C000CA29F /* ContViewController.xib in Resources */,
+				B0F61C531AC5C1B30065A5BB /* Icon-Small-40@2x.png in Resources */,
 				B0F9B67C1AC4901A000CA29F /* BhaskaraViewController.xib in Resources */,
+				B0F61C4F1AC5BB040065A5BB /* Icon-60.png in Resources */,
+				B0F61C511AC5BB210065A5BB /* Icon-76@2x.png in Resources */,
 				985930421AC3177C007FA8D3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

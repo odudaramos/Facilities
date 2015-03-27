@@ -24,9 +24,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    self.flashButton.layer.cornerRadius = 20.0;
+    self.flashButton.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.flashButton.layer.borderWidth = 3.0;
+    
     UISwipeGestureRecognizer *swipe2 = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
     [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
     [self.view addGestureRecognizer:swipe2];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,16 +51,23 @@
     [self toggleFlashlight];
     
     if(!_onOff){
-        [self.view setBackgroundColor:[UIColor blackColor]];
-        [button setTitle:@"On" forState:UIControlStateNormal];
-        [button setBackgroundColor:[UIColor whiteColor]];
-        
+        [self.view setBackgroundColor:[UIColor whiteColor]];
+       // [button setTitle:@"On" forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor blackColor]];
+        self.flashLabel.textColor = [UIColor blackColor];
+        self.flashButton.layer.cornerRadius = 20.0;
+        self.flashButton.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.flashButton.layer.borderWidth = 3.0;
         
     }
     else{
         [self.view setBackgroundColor:[UIColor blackColor]];
-        [button setTitle:@"Off" forState:UIControlStateNormal];
+        //[button setTitle:@"Off" forState:UIControlStateNormal];
         [button setBackgroundColor:[UIColor whiteColor]];
+        self.flashLabel.textColor = [UIColor whiteColor];
+        self.flashButton.layer.cornerRadius = 20.0;
+        self.flashButton.layer.borderColor = [[UIColor whiteColor] CGColor];
+        self.flashButton.layer.borderWidth = 3.0;
     }
     
     _onOff = !_onOff;
@@ -66,7 +78,7 @@
     AVCaptureDevice * captDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if ([captDevice hasFlash]&&[captDevice hasTorch]) {
         if (captDevice.torchMode == AVCaptureTorchModeOff) {
-            //[backImage setImage:[UIImage imageNamed:@"flashBG1.png"]];
+        //    [backImage setImage:[UIImage imageNamed:@"Icon-76@2x.png"]];
             [captDevice lockForConfiguration:nil];
             [captDevice setTorchMode:AVCaptureTorchModeOn];
             [captDevice unlockForConfiguration];
