@@ -23,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lbl;
 
+
 @end
 
 @implementation BhaskaraViewController
@@ -105,7 +106,6 @@
     double b = [textFieldB.text doubleValue];
     double c = [textFieldC.text doubleValue];
     double x = 0;
-    
     if(([textFieldA.text  isEqual: @""]) || ([textFieldB.text  isEqual: @""])||([textFieldC.text  isEqual: @""])){
         
         UIAlertView *alert = [[UIAlertView alloc]
