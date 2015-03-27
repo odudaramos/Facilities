@@ -10,6 +10,7 @@
 
 @interface FlashLightViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *flashLabel;
 @property (weak, nonatomic) IBOutlet UIButton *flashButton;
 
 @property (readwrite) BOOL onOff;
@@ -23,10 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    UISwipeGestureRecognizer *swipe = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
-    
-    [swipe setDirection:UISwipeGestureRecognizerDirectionDown];
-    [self.view addGestureRecognizer:swipe];
+    UISwipeGestureRecognizer *swipe2 = [[ UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(mudarTela2)];
+    [swipe2 setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.view addGestureRecognizer:swipe2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +37,8 @@
 -(void)mudarTela2 {
     
     [self dismissViewControllerAnimated:YES completion:nil];
-    
 }
+
 
 - (IBAction)cliqueBotao:(id)sender {
     
@@ -48,12 +48,14 @@
     if(!_onOff){
         [self.view setBackgroundColor:[UIColor blackColor]];
         [button setTitle:@"On" forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor whiteColor]];
         
         
     }
     else{
         [self.view setBackgroundColor:[UIColor blackColor]];
         [button setTitle:@"Off" forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor whiteColor]];
     }
     
     _onOff = !_onOff;

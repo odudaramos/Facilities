@@ -50,7 +50,20 @@
     
     [self.view addGestureRecognizer:singleTap];
     
-    self.buttonCalcular.layer.cornerRadius = 15.0;
+    self.textFieldA.layer.cornerRadius = 10.0;
+    self.textFieldA.layer.borderColor = [[UIColor orangeColor] CGColor];
+    self.textFieldA.layer.borderWidth = 3.0;
+    
+    
+    self.textFieldB.layer.cornerRadius = 10.0;
+    self.textFieldB.layer.borderColor = [[UIColor orangeColor] CGColor];
+    self.textFieldB.layer.borderWidth = 3.0;
+    
+    self.textFieldC.layer.cornerRadius = 10.0;
+    self.textFieldC.layer.borderColor = [[UIColor orangeColor] CGColor];
+    self.textFieldC.layer.borderWidth = 3.0;
+    
+    self.buttonCalcular.layer.cornerRadius = 10.0;
     self.buttonCalcular.layer.borderColor = [[UIColor blackColor] CGColor];
     self.buttonCalcular.layer.borderWidth = 3.0;
 //    
