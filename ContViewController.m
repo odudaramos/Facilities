@@ -121,6 +121,8 @@
     }
     if (_x ==11 && _x2==11) {
         self.break2.hidden = false;
+        self.menos.hidden=true;
+        self.menos2.hidden = true;
     }
 
     
