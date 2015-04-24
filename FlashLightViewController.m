@@ -7,6 +7,7 @@
 //
 
 #import "FlashLightViewController.h"
+#import <AudioToolBox/AudioServices.h>
 
 @interface FlashLightViewController ()
 
@@ -58,6 +59,7 @@
         self.flashButton.layer.cornerRadius = 20.0;
         self.flashButton.layer.borderColor = [[UIColor whiteColor] CGColor];
         self.flashButton.layer.borderWidth = 3.0;
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
         
     }
     else{
@@ -68,6 +70,7 @@
         self.flashButton.layer.cornerRadius = 20.0;
         self.flashButton.layer.borderColor = [[UIColor whiteColor] CGColor];
         self.flashButton.layer.borderWidth = 3.0;
+        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     }
     
     _onOff = !_onOff;
@@ -92,6 +95,8 @@
         }
     }
 }
+
+
 
 
 /*

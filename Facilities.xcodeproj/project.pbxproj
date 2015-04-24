@@ -83,6 +83,7 @@
 		9859302E1AC3177C007FA8D3 = {
 			isa = PBXGroup;
 			children = (
+				B0E70AE81AC5D34900396D97 /* Icon-76@2x.png */,
 				985930601AC31879007FA8D3 /* FacilitiesViewController.h */,
 				985930611AC31879007FA8D3 /* FacilitiesViewController.m */,
 				985930621AC31879007FA8D3 /* FacilitiesViewController.xib */,
@@ -91,7 +92,6 @@
 				B0F9B6721AC48A0C000CA29F /* ContViewController.xib */,
 				B0F9B6781AC4901A000CA29F /* BhaskaraViewController.h */,
 				B0F9B6791AC4901A000CA29F /* BhaskaraViewController.m */,
-				B0E70AE81AC5D34900396D97 /* Icon-76@2x.png */,
 				B0F9B67A1AC4901A000CA29F /* BhaskaraViewController.xib */,
 				B0F61C3C1AC5178C0065A5BB /* FlashLightViewController.h */,
 				B0F61C3D1AC5178C0065A5BB /* FlashLightViewController.m */,
